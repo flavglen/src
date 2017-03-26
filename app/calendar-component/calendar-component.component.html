@@ -1,0 +1,4 @@
+<div [formGroup]="myForm">
+    <p-calendar  (change)="blurs($event)" [(ngModel)]="datesSe" [minDate]="minDateValue"  formControlName="dates" dateFormat="dd/mm/yy"  [showIcon]="true"></p-calendar>
+</div>
+{{myForm.controls.dates.valid}}

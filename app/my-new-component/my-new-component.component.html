@@ -1,0 +1,11 @@
+<p>
+  my-new-component works!
+</p>
+
+<form [formGroup]="myForm" novalidate (ngSubmit)="save(myForm.value, myForm.valid)">
+      <datepicker [group]="myForm"></datepicker>
+</form>
+
+<form [formGroup]="myDpForm" novalidate (ngSubmit)="save(myForm.value, myForm.valid)">
+      <datepicker [group]="myDpForm"></datepicker>
+</form>
